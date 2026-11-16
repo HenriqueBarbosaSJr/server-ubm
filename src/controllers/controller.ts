@@ -1,7 +1,7 @@
 import type { FastifyReply, FastifyRequest } from 'fastify';
 import db from '../databases/db.js';
 
-type ProdutoBody = {
+export type ProdutoBody = {
   nome: string;
   descri: string;
   fabricante: string;
@@ -10,7 +10,7 @@ type ProdutoBody = {
   custo: number;
 };
 
-type CodproParams = {
+export type CodproParams = {
   codpro: string;
 };
 
